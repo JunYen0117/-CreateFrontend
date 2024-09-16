@@ -1,0 +1,48 @@
+.memberset{
+    .memberset_title{
+        font-size: $h2-font-size;
+        font-weight: bold;
+    }
+    .memberset_figure{
+        width: 160px;
+        height: 160px;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(185, 150, 100, 0.4);
+    }
+    .memberset_figure_SVG{
+        position: absolute;
+        top:10px;
+    }
+    .member_input, select{
+        border: 1px solid $secondary;
+        border-radius: 0;
+    }
+    label{
+        font-size: $h2-font-size;
+        font-weight: bold;
+    }
+    .member_update_btn{
+        width: 300px;
+        height: 40px;
+        color: white;
+        background: $primary;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 0;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .memberset{
+        .memberset_title{
+            font-size: $h4-font-size;
+            font-weight: bold;
+        }
+        label{
+            font-size: $h4-font-size;
+            font-weight: bold;
+        }
+    }
+  }

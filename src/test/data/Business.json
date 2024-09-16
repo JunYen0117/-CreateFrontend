@@ -1,0 +1,68 @@
+[
+    [
+        {
+            "img": "red.jpg",
+            "title": "燒味袋防水側背包",
+            "brand_name": "品牌名1"
+        },
+        {
+            "img": "red.jpg",
+            "title": "傳遞信封包",
+            "brand_name": "品牌名1"
+        },
+        {
+            "img": "red.jpg",
+            "title": "搖籃曲朋友兔寶寶",
+            "brand_name": "品牌名1"
+        },
+        {
+            "img": "red.jpg",
+            "title": "搖籃曲朋友兔寶寶",
+            "brand_name": "品牌名1"
+        }
+    ],
+    [
+        {
+            "img": "rainbow.png",
+            "title": "燒味袋防水側背包",
+            "brand_name": "品牌名2"
+        },
+        {
+            "img": "rainbow.png",
+            "title": "傳遞信封包",
+            "brand_name": "品牌名2"
+        },
+        {
+            "img": "rainbow.png",
+            "title": "搖籃曲朋友兔寶寶",
+            "brand_name": "品牌名2"
+        },
+        {
+            "img": "rainbow.png",
+            "title": "搖籃曲朋友兔寶寶",
+            "brand_name": "品牌名2"
+        }
+    ],
+    [
+        {
+            "img": "kaigi.jpg",
+            "title": "燒味袋防水側背包",
+            "brand_name": "品牌名3"
+        },
+        {
+            "img": "kaigi.jpg",
+            "title": "傳遞信封包",
+            "brand_name": "品牌名3"
+        },
+        {
+            "img": "kaigi.jpg",
+            "title": "搖籃曲朋友兔寶寶",
+            "brand_name": "品牌名3"
+        },
+        {
+            "img": "kaigi.jpg",
+            "title": "搖籃曲朋友兔寶寶",
+            "brand_name": "品牌名3"
+        }
+    ]
+]

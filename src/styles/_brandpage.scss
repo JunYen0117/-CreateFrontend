@@ -1,0 +1,199 @@
+// Banner
+.banner {
+    height: 35vh;
+    img {
+        height: 35vh;
+        object-fit: cover;
+    }
+}
+.banner-text {
+    background-color: #dcd5ca;
+    p {
+        color: #b99664;
+        padding: 5vh 0;
+        margin-bottom: 50px;
+        font-weight: 600;
+        letter-spacing: 15%;
+        font-size: 16px;
+    }
+}
+// BrandButton
+.button2 {
+    padding-left: 0;
+}
+.button3 {
+    padding-right: 0;
+}
+.price-choise {
+    ul {
+        padding: 0;
+    }
+}
+.brandpage_line {
+    border-bottom: 2px solid $primary;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.product_mask {
+    position: relative;
+    img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+.product_option_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(165, 182, 164, 0.5);
+}
+
+.product_option_text {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 600;
+    z-index: 5;
+}
+
+// 切換遞增遞減：價格排序
+.product_filter{
+    span{
+        margin: 10px;
+    }
+}
+
+
+// Brandcard
+.brand {
+    margin: 0 0 40px 0;
+}
+.brand-card {
+    border: 1px solid $secondary;
+    border-radius: 0px;
+}
+.brand-card {
+    .brand-banner {
+        height: 100px;
+        object-fit: cover;
+    }
+    .brand-logo {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 15px;
+    }
+}
+.brand-imformation {
+    height: 100%;
+    padding-right: 20px;
+    h2 {
+        max-width: 100%;
+        color: #000;
+        font-weight: 600;
+        line-height: 25px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .card-text {
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+}
+
+/*以下為手機版*/
+@media screen and (max-width: 768px) {
+    // 當月經選品牌、全部店家
+    .button2, .button3{
+        padding: 0 15px;
+    }
+    .product_mask {
+        img {
+            width: 100%;
+            height: 105px;
+            object-fit: cover;
+        }
+    }
+    .product_sidebar {
+        a {
+            font-size: 12px;
+        }
+    }
+    .product_option_text {
+        font-size: 2.5rem;
+    }
+    .price-choise{
+        ul{
+            margin: 0;
+            padding: 0 15px;
+        }
+    }
+    .product_filter{
+        span{
+            font-size: 14px;
+        }
+        img{
+            width: 14px;
+        }
+    }
+    .brandpage_line {
+        width: 90vw;
+        margin-bottom: 20px;
+    }
+    // 品牌卡片
+    .brand {
+        margin: 0;
+    }
+    .banner-text {
+        p {
+            padding: 3vh 4vw;
+            margin-bottom: 20px;
+            letter-spacing: 12%;
+            font-size: 12px;
+        }
+    }
+    .all-brand-card {
+        .row {
+            flex-wrap: wrap;
+        }
+    }
+    .brand-card {
+        border: 0px;
+        border-radius: 0px;
+        .brand-banner {
+            display: none;
+        }
+        .brand-logo{
+            width: 90px;
+            height: 90px;
+        }
+    }
+    .card-body {
+        align-items: center;
+    }
+    .brand-imformation {
+        h2 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}

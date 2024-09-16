@@ -1,39 +1,39 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <>
-      <div className="sidebar d-flex">
+      <div className="sidebar">
         <ul className="col-md-4 text-center">
           <li>
-            <a href="#/" className="text-decoration-none ">
+            <NavLink to="/activity" className="text-decoration-none" exact>
               我的活動
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#/" className="text-decoration-none">
+            <NavLink to="/fav" className="text-decoration-none" exact>
               我的收藏
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#/" className="text-decoration-none">
+            <NavLink to="/member" className="text-decoration-none" exact>
               帳戶設定
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#/" className="text-decoration-none">
+            <NavLink to="/pwdchanging" className="text-decoration-none" exact>
               變更密碼
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#/" className="text-decoration-none">
+            <NavLink to="/order" className="text-decoration-none" exact>
               我的訂單
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#/" className="text-decoration-none">
+            <NavLink to="/coupon" className="text-decoration-none" exact>
               優惠券
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>

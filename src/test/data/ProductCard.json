@@ -1,0 +1,70 @@
+[
+    [
+        {
+            "product": "商品1",
+            "brand": "品牌名1",
+            "product_pic": "http://localhost:3001/images/P1.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "1000"
+        },
+        {
+            "product": "商品2",
+            "brand": "品牌名2",
+            "product_pic": "http://localhost:3001/images/P2.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "2000"
+        },
+        {
+            "product": "商品3",
+            "brand": "品牌名3",
+            "product_pic": "http://localhost:3001/images/P3.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "3000"
+        },
+        {
+            "product": "商品4",
+            "brand": "品牌名4",
+            "product_pic": "http://localhost:3001/images/P4.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "4000"
+        }
+    ],
+    [
+        {
+            "product": "商品1",
+            "brand": "品牌名1",
+            "product_pic": "http://localhost:3001/images/P1.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "1000"
+        },
+        {
+            "product": "商品2",
+            "brand": "品牌名2",
+            "product_pic": "http://localhost:3001/images/P2.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "2000"
+        },
+        {
+            "product": "商品3",
+            "brand": "品牌名3",
+            "product_pic": "http://localhost:3001/images/P3.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "3000"
+        },
+        {
+            "product": "商品4",
+            "brand": "品牌名4",
+            "product_pic": "http://localhost:3001/images/P4.jpg",
+            "brand_href": "/",
+            "pic_href": "/",
+            "cost": "4000"
+        }
+    ]
+]

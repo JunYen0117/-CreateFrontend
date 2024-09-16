@@ -1,0 +1,99 @@
+.carousel_img{
+  width:800px;
+  height:600px;
+  margin: auto;
+}
+.exhibition-sidebar{
+    position: sticky;
+    top:200px;
+    .nav-link{
+      color:black;
+    }
+    .is-active{
+      font-weight: bold;
+      color: $primary;
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 20px;
+        position: relative;
+        right: 10px;
+        align-self: center;
+        background: $primary;
+      }
+
+    }
+  }
+  .exhibition-text{
+      
+      .text-title{
+          font-size: 2rem;
+          font-weight: bolder;
+          color: $primary;
+      }
+      .text{
+        line-height: 25px;
+        font-size: 16px;
+        font-weight: 500;
+
+      }
+      h1{
+        font-weight: bold;
+     
+      }
+     
+  }
+  
+  
+  .exhibition-order-card{
+  
+    .exhibition-order{
+        .ex-title{
+            font-weight:bold;
+            color: $primary;
+        }
+      h2{
+        font-weight:bold;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+      }
+      .row{
+        line-height: 40px;
+        // border: 1px solid black;
+      }
+      .total-price{
+        font-size: $font-size-base * 1.125;
+        span{
+          font-size: $font-size-base * 1.375;
+          color: $primary;
+          margin-left: 10px;
+        }
+  
+      }
+      .submit-button{
+        border: 0;
+        background: $primary;
+        color: white;
+        width: 150px;
+        height: 40px;
+      }
+      
+      
+      .icon{
+        color: $primary;
+        font-size: 20px;
+        
+      }
+      .icon-disable{
+        color:#ccc;
+        cursor: not-allowed;
+        
+      }
+      
+      .per{
+        text-align: center;
+      }
+    }
+  
+  }

@@ -1,0 +1,289 @@
+//SliderBanner輪播
+.gallery {
+    margin: 20px 0 50px 0;
+    width: 100%;
+}
+.carousel-indicators {
+    button {
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 100% !important;
+        margin: 0 10px !important;
+    }
+}
+// 標題字
+.front_h2 {
+    font-size: 22px;
+    color: $primary !important;
+    margin: 0 120px 20px 120px;
+    font-weight: 600;
+    a {
+        text-decoration: none;
+        color: $primary !important;
+    }
+}
+// ProductCard質感商品
+.all-product-card {
+    margin: 0 120px 100px 120px;
+}
+.front_card {
+    border: 0px !important;
+    padding: 0 10px;
+}
+
+.product_img {
+    width: 100%;
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.product_img:hover {
+    box-shadow: 8px 8px 10px #b996644d;
+}
+.card-body {
+    padding: 0;
+}
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 15%;
+    line-height: 24.52px;
+    margin-bottom: 15px;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+.card-text {
+    font-size: 14px;
+    text-decoration: none;
+    color: $success;
+    margin-bottom: 15px;
+}
+.money {
+    color: $primary;
+}
+
+// BusinessLogo 品牌Logo
+.front_brand_card {
+    border: 0 !important;
+}
+.front_brand_name {
+    a {
+        font-weight: 600;
+        letter-spacing: 15%;
+        line-height: 24.52px;
+        font-size: 18px !important;
+        color: black;
+    }
+}
+.all-logo {
+    margin: 0 120px 100px 120px;
+    .card-body {
+        padding: 10px 0 0 0 !important;
+    }
+}
+.logo-pic {
+    width: 100%;
+    margin-bottom: 0;
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    :hover {
+        box-shadow: 8px 8px 10px #b996644d;
+    }
+}
+
+button {
+    img {
+        position: relative;
+        top: 28%;
+    }
+}
+
+// ArticleCards 精選文章
+.article-container {
+    padding-bottom: 50px;
+}
+.article_img {
+    width: 180px;
+    height: 240px;
+    img {
+        width: 180px;
+        height: 240px;
+        object-fit: cover;
+    }
+}
+.article_card {
+    padding: 20px !important;
+    // max-width: 100%;
+    // max-height: 100%;
+    a {
+        text-decoration: none;
+        margin: 0 20px;
+    }
+}
+.act{
+    max-width: 90%;
+    max-height: 100%;
+}
+.article_card:hover {
+    box-shadow: 0px 0px 20px #b996644d;
+}
+.article_text {
+    margin-left: 20px !important;
+    padding-left: 20px !important; 
+    h3 {
+        max-width: 100%;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+    }
+    .line {
+        border-bottom: 2px solid #b99664;
+        width: 100%;
+    }
+    p {
+        max-width: 100%;
+        height: 120px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        margin: 10px 0;
+        color: black;
+        line-height: 25px;
+        letter-spacing: 15%;
+    }
+}
+/*手機板*/
+@media screen and (max-width: 767px) {
+    // 輪播
+    .gallery {
+        margin: 10px 0 20px 0;
+        width: 100%;
+    }
+    .carousel-item {
+        img {
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .carousel-indicators {
+        button {
+            width: 5px !important;
+            height: 5px !important;
+            border-radius: 100% !important;
+            margin: 0 5px !important;
+        }
+    }
+    // 標題字
+    .front_h2 {
+        font-size: 14px;
+        margin: 0 15px 20px 15px;
+        a {
+            text-decoration: none;
+        }
+    }
+
+    //商品
+    .card-title {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 15%;
+        line-height: 24.52px;
+        margin-bottom: 15px;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .card-text {
+        font-size: 12px;
+        text-decoration: none;
+        color: $success;
+        margin-bottom: 15px;
+    }
+    .money {
+        color: $primary;
+        font-size: 12px;
+    }
+    // 精選品牌
+    .front_brand_name {
+        a {
+            font-weight: 600;
+            letter-spacing: 15%;
+            line-height: 24.52px;
+            font-size: 14px !important;
+            color: black;
+        }
+    }
+    // 文章
+    .article-container {
+        padding-bottom: 35px;
+    }
+    .atc {
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .article_card {
+        min-width: 100%;
+        min-height: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    .article_img {
+        width: 100%;
+        height: 240px;
+        margin-bottom: 15px;
+        img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+    }
+
+    .article_text {
+        margin-left: 20px !important;
+        h3 {
+            max-width: 100%;
+            color: black;
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+        }
+        .line {
+            border-bottom: 2px solid #b99664;
+            width: 100%;
+        }
+        p {
+            max-width: 100%;
+            height: 120px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+            margin: 10px 0;
+            color: black;
+            line-height: 25px;
+            letter-spacing: 15%;
+            font-size: 12px;
+        }
+    }
+}

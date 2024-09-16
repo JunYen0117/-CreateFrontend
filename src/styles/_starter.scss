@@ -1,0 +1,150 @@
+.starter_flex{
+    width: 100vw;
+    height: 100vh;
+    background: $primary;
+    overflow: hidden;
+    //模組化flex_item和內文
+    .starter_flex_item_left, .starter_flex_item_mid, .starter_flex_item_right{
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        position: relative;
+        .link{
+            display: block;
+            width: auto;
+            height: 100%;
+            .text{
+                font-size: 36px;
+                font-weight: bold;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-writing-mode: vertical-lr;
+                writing-mode: vertical-lr;
+            }
+        }
+    }
+    .flying{  //點擊動畫效果
+        transform: translateY(-100vh);
+        transition: 1s;
+        transition-timing-function: cubic-bezier(.56,-0.42,.92,.72);
+    }
+    // 個別設定
+    .starter_flex_item_left{
+        .link{
+            background: url(../img/Starter/startpage2.jpg) 33% 50%;
+            &:hover{
+                transition: .5s;
+                background: url(../img/Starter/startpage2.jpg) 33% 60%;
+                .text{
+                    transition: .5s;
+                    font-size: 44px;
+                }
+            }
+            &:not(:hover){
+                transition: .5s;
+                background: url(../img/Starter/startpage2.jpg) 33% 50%
+            }
+            .text{
+                color: $info;
+            }
+        }
+    }
+    .starter_flex_item_mid{
+        .link{
+            background: url(../img/Starter/startpage1.jpg) center center;
+            &:hover{
+                transition: .5s;
+                background: url(../img/Starter/startpage1.jpg) center 60%;
+                .text{
+                    transition: .5s;
+                    font-size: 44px;
+                }
+            }
+            &:not(:hover){
+                transition: .5s;
+                background: url(../img/Starter/startpage1.jpg) center center;
+            }
+            .text{
+                color: $secondary;
+            }
+        }
+    }
+    .starter_flex_item_right{
+        .link{
+            background: url(../img/Starter/startpage3.jpg) center 80%;
+            &:hover{
+                transition: .5s;
+                background: url(../img/Starter/startpage3.jpg) center 90%;
+                .text{
+                    transition: .5s;
+                    font-size: 44px;
+                }
+            }
+            &:not(:hover){
+                transition: .5s;
+                background: url(../img/Starter/startpage3.jpg) center 80%;
+            }
+            .text{
+                color:black;
+            }
+        }
+    }
+}
+
+
+.starter_skip, .starter_skip:active{
+    display: block;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    color: $info;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover{
+        color: $primary;
+        background: rgba(255, 255, 255, 0.25);
+        transition: .4s;
+    }
+}
+
+
+// 手機版
+@media screen and (max-width: 768px){
+    .starter_flex{
+        .starter_flex_item_left, .starter_flex_item_mid, .starter_flex_item_right{
+            .link{
+                .text{
+                    font-size: 20px;
+                    -webkit-writing-mode: horizontal-tb;
+                    writing-mode: horizontal-tb;
+                }
+                &:hover{
+                    .text{
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+        .flying{  //點擊動畫效果
+            transform: translateX(100vw);
+            transition: 1s;
+            transition-timing-function: cubic-bezier(.56,-0.42,.92,.72);
+        }
+        .starter_flex_item_left{
+            background: url(../img/Starter/startpage2.jpg) 50% 60%;
+        }
+        .starter_flex_item_right{
+            background: url(../img/Starter/startpage3.jpg) center 85%;
+        }
+    }
+    .starter_skip, .starter_skip:active{
+        font-size: 14px;
+        position: absolute;
+        right: 50%;
+        bottom: 3%;
+        transform: translate(50%, 0%);
+    }
+}

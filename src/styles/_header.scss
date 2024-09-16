@@ -1,33 +1,42 @@
-
 .header_top {
   padding-inline-start: 0px; 
   margin-bottom: 0px;
+  margin-right: 100px;
+
 }
 .header_a {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 header {
   height: 180px;
+  background: white;
   box-shadow: 0 5px 5px rgba(185, 150, 100, 0.25);
-  position: relative;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
 }
 .desktop_figure {
   width: 140px;
 }
 .search_item {
   position: relative;
+  margin-top: 45px;
 }
 .search_bar {
   width: 200px;
-  height: 40px;
+  height: 30px;
   border-radius: 20px;
 }
 .search_icon {
   position: absolute;
-  right: 12px;
-  top: 5px;
+  right: 10px;
+  top: 2px;
+}
+.profile_item{
+  position: relative;
 }
 .menu2 {
   a {
@@ -39,9 +48,28 @@ header {
     font-size: $h2-font-size;
     font-weight: bold;
   }
-  a:hover {
+  a:hover,
+  .active {
     color: white;
     background: $primary;
+  }
+}
+
+.shopcart_item {
+  position: relative;
+  span{
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    border-radius: 10px;
+    top: -8px;
+    right: -8px;
+    display: block;
+    color: #FFF;
+    background-color: #F00;
+    width: 27px;
+    height: 20px;
+    font-weight: 600;
   }
 }
 
@@ -62,14 +90,35 @@ header {
     position: absolute;
     top: 52px;
   }
+
+
   .offcanvas {
     width: 70%;
   }
   .offcanvas_left_menu {
     background: $primary;
+    padding: 0 0 0 0;
   }
-  .offcanvas-body li {
-    height: 25vh;
+  .left_offcanvas_body{
+    margin: 0 0 0 0;
+    li{
+      height: 16.5vh;
+      position: relative;
+      border-bottom: 1px solid white;
+        a{
+          width: 100px;
+        }
+    }    
+  }
+  .offcanvas_right_menu {
+    background: $success;
+    padding: 0 0 0 0;
+  }
+  .right_offcanvas_body{
+    margin: 0 0 0 0;
+  }
+  .right_offcanvas_body li {
+    height: 14vh;
     position: relative;
     border-bottom: 1px solid white;
     a {
@@ -79,16 +128,20 @@ header {
   .offcanvas-body .last_li {
     border-bottom: none;
   }
-  .offcanvas-body a {
+  .left_offcanvas_body li a, .right_offcanvas_body li a{
     display: block;
+    color: white;
     font-size: $h4-font-size; 
+    font-weight: bold;
     text-align: center;
+    text-decoration: none;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -40px;
     margin-top: -10px;
   }
+
   .mobile_search_bar_section {
     /* display: none; */
     position: sticky;

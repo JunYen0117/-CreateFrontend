@@ -1,0 +1,56 @@
+.signup_form{
+    .signup_body{
+        width: 400px;
+        margin: 0 auto;
+        border-bottom: 2px solid $primary;
+        .is_required{
+            color: red;
+            margin-left: 50px;
+        }
+        input, select{
+            display: block;
+            width: 300px;
+            height: 40px;
+        }
+        .gender_select{
+            color: gray;
+            margin: 0 auto;
+        }
+        .signup_title{
+            font-size: 18px;
+            font-weight: bold;
+            color: $primary;
+        }
+        .password{
+            position: relative;
+            .signup_eye{
+                position: absolute;
+                top: 2px;
+                right: 60px;
+            }
+        }
+        .re_password{
+            position: relative;
+            .signup_eye2{
+                position: absolute;
+                top: 2px;
+                right: 60px;
+            }
+        }
+        .error_message{
+            position: absolute;
+            color: red;
+            margin-left: 55px;
+        }
+    }
+    .signup_footer{
+
+        .signup_btn{
+            width: 300px;
+            height: 40px;
+            color: white;
+            background-color: $primary;
+            border: 0;
+        }
+    }
+}

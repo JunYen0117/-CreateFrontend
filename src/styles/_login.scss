@@ -1,0 +1,82 @@
+// 取消bootstrap Tabbed components 預設套件
+.modal-content{
+    border-radius: 0;
+}
+.nav-tabs {
+    border-bottom: none;
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+//預設樣式 結束
+
+//註冊登入上方按鈕
+.login_header{
+    display: flex;
+}
+.login_header .nav-item, .login_header button{
+    display: block;
+    flex: 1;
+    height: 70px;
+    color: $primary;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px
+}
+.login_header button{
+    width: 100%;
+}
+.login_header.nav-tabs .nav-link{  //沒有啟動active的按鈕背景
+    background: $secondary;
+}
+.login_header.nav-tabs .nav-link.active{
+    color: $primary;
+    background: white;
+}
+
+
+.login_form{
+    height: 390px;
+    .login_body{
+        .login_form_logo{
+            img{
+                display: block;
+                margin: 30px auto;
+            }
+        }
+        .login_title{
+            font-size: 18px;
+            font-weight: bold;
+            color: $primary;
+        }
+        .account input{
+            display: block;
+            width: 300px;
+            height: 40px;
+        }
+        .password{ 
+            position: relative;
+            input{
+            display: block;
+            width: 300px;
+            height: 40px;
+            }
+            .login_eye{
+            position: absolute;
+            top: 2px;
+            right: 110px;
+            }
+        }
+        .login_btn{
+            width: 300px;
+            height: 40px;
+            color: white;
+            background-color: $primary;
+            border: 0;
+        }
+    }
+}

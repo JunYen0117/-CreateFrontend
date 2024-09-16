@@ -1,0 +1,143 @@
+.course-carousel{
+    height: 275px;
+}
+.coure-sidebar{
+  position: sticky;
+  top:20px;
+    .nav-item{
+      // position: relative;
+      // left: 30px;
+        .nav-link{
+          position: relative;
+          color:black;
+          &:hover{
+            color:$primary;
+          }
+          &:focus{
+            &::before{
+              content: "";
+              display: inline-block;
+              width: 5px;
+              height: 20px;
+              position: relative;
+              right: 10px;
+              align-self: center;
+              background: $primary;
+            }
+            color:$primary;
+            font-weight: bold;
+          }
+        }
+      }
+}
+.course-text{
+    
+    .text-title{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: $primary;
+    }
+    h1{
+      font-weight: bold;
+    }
+    // .text{
+    //   font-size: 18px;
+    // }
+
+}
+
+
+.order-card{
+
+  .course-order{
+    h2{
+      font-weight:bold;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+    .row{
+      line-height: 40px;
+      // border: 1px solid black;
+    }
+    .total-price{
+      font-size: $font-size-base * 1.125;
+      span{
+        font-size: $font-size-base * 1.375;
+        color: $primary;
+        margin-left: 10px;
+      }
+
+    }
+    button{
+      border: 0;
+      background: $primary;
+      color: white;
+      width: 150px;
+      height: 40px;
+    }
+    
+    
+    .icon{
+      font-size: 20px;
+      color: $primary;
+      
+    }
+    .per{
+      text-align: center;
+    }
+  }
+
+}
+
+.rdp{
+  margin-top: 0 !important;
+}
+.rdp-months {
+  justify-content:center !important;
+  
+}
+
+.rdp-button:focus,
+.rdp-button:active {
+  color: inherit;
+  border: 2px solid $primary !important;
+  background-color: white  !important;
+}
+
+.rdp-weeknumber,
+.rdp-day {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50px  !important;
+  max-width: 50px  !important;
+  height: 50px  !important;
+  margin: 0;
+  
+  border-radius: 2%  !important;
+}
+
+.rdp-nav_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px  !important;
+  height: 50px  !important;
+  padding: 0.25em;
+  border-radius: 2%  !important;
+}
+.rdp-weeknumber {
+  font-size: 32px  !important;
+}
+.rdp-day_selected:not([aria-disabled='true']),
+.rdp-day_selected:focus:not([aria-disabled='true']),
+.rdp-day_selected:active:not([aria-disabled='true']),
+.rdp-day_selected:hover:not([aria-disabled='true']) {
+  color: white;
+  background-color:$primary  !important;
+}
+.rdp-day_selected:focus:not([aria-disabled='true']) {
+  border: #ccc !important;
+}

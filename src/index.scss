@@ -1,8 +1,83 @@
 // 這個檔案只連結其他scss檔
 
-@import './styles/_global.scss';
-@import './styles/_header.scss';
-@import './styles/_footer.scss';
+// 共用
+@import "./styles/_global.scss";
+@import "./styles/_header.scss";
+@import "./styles/_footer.scss";
 
+// 首頁
+@import "./styles/_frontpage.scss";
 
-@import './styles/sidebar.scss'
+@import "./styles/sidebar.scss";
+
+// 靜態頁面
+@import "./styles/fav.scss";
+
+// 訂單
+@import "./styles/_orderList.scss";
+//展覽
+@import "./styles/_exhibition.scss";
+@import "./styles/_exhibitionexplore.scss";
+
+@import "./styles/_global.scss";
+@import "./styles/_header.scss";
+@import "./styles/_footer.scss";
+@import "./styles/_sidebar.scss";
+@import "./styles/_headerdropdown.scss";
+@import "antd/dist/antd.css";
+
+// 文章頁
+@import "./styles/_artmagazine.scss";
+@import "./styles/magzarticle";
+
+// 品牌頁
+@import "./styles/_brandpage.scss";
+@import "./styles/_brandstores.scss";
+
+// 商品列表、明細
+@import "./styles/_products.scss";
+
+// 購物車
+@import "./styles/_cart.scss";
+@import "./styles/_checkoutmodal.scss";
+
+// 訂單
+@import "./styles/_OrderList.scss";
+
+// 收藏
+@import "./styles/_fav.scss";
+
+// 評論
+@import "./styles/_comment.scss";
+
+// 課程詳細
+@import "./styles/_course.scss";
+
+// 展覽
+@import "./styles/_exhibition.scss";
+@import "./styles/_exhibitionexplore.scss";
+
+// 優惠券
+@import "./styles/_coupon.scss";
+
+// 起始頁
+@import "./styles/_starter.scss";
+
+// 登入登出
+@import "./styles/_activity.scss";
+@import "./styles/_activitypayment.scss";
+
+// 會員
+@import "./styles/_pwdchanging.scss";
+@import "./styles/_member.scss";
+
+// 註冊、登入、忘記密碼
+@import "./styles/_login.scss";
+@import "./styles/_signup.scss";
+@import "./styles/_forgottenpwd.scss";
+
+// 主題企劃
+@import "./styles/_themeplanning.scss";
+
+// 關於我們
+@import "./styles/about";

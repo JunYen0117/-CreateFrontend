@@ -1,0 +1,137 @@
+// 品牌的Banner
+.storebanner {
+    height: 35vh;
+    margin-bottom: 60px;
+    img {
+        width: 100vh;
+        height: 35vh;
+        object-fit: cover;
+    }
+}
+// 店家資訊區塊
+.logo {
+    width: 230px;
+    height: 150px;
+}
+.brand-imformation {
+    flex-wrap: wrap;
+    margin-left: 45px;
+    .store_name {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+// 星星評分
+.ant-rate {
+    color: $info !important;
+    margin: 0 16px 12px 0 !important;
+}
+.comment {
+    font-size: 18px;
+    .product_comment_id {
+        font-size: 18px;
+        color: $success;
+    }
+}
+.product-vendor_id {
+    p {
+        margin-bottom: 10px;
+    }
+}
+.customer_order_detail {
+    p {
+        margin-bottom: 10px;
+    }
+}
+// 數量
+.count {
+    font-size: 18px;
+}
+/* 資訊連結SCSS*/
+.border-line {
+    border-left: 1px solid $success;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-left: 40px;
+    .information {
+        font-size: 14px;
+        margin-top: 15px;
+        color: $success;
+    }
+}
+.information_icon {
+    margin: 0 7px;
+}
+.store_address,
+.create_time {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0 !important;
+    margin-left: 7px;
+}
+// TopBar
+.topbar {
+    margin: 0 100px;
+    .bar {
+        margin-bottom: 100px;
+    }
+}
+.topbar_nav {
+    color: #acacac;
+    border-bottom: 1px solid #acacac;
+    font-weight: bold;
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+:focus-visible {
+    outline-width: 0;
+}
+.topbar_btn {
+    color: #acacac;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    &:hover {
+        color: $primary;
+    }
+    &:focus {
+        border-bottom: 2px solid #b99664;
+        color: $primary;
+    }
+    &:active {
+        border-bottom: 2px solid #b99664;
+        color: $primary;
+    }
+    &.active {
+        border-bottom: 2px solid #b99664;
+        color: $primary;
+    }
+}
+// 店家商品
+.productinfo {
+    margin-top: 15px;
+}
+.ratio:hover {
+    box-shadow: 8px 8px 10px #b996644d;
+}
+// 退換貨政策
+.policy-title {
+    margin: 0 0 50px 0;
+}
+.policy-list {
+    ul {
+        padding-left: 20px;
+        li {
+            list-style-type: disc;
+        }
+    }
+}
+
+/*手機版*/
+@media screen and (max-width: 768px){
+    .storebanner{
+        display: none;
+    }
+}

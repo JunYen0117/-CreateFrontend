@@ -1,0 +1,28 @@
+.forgotten_pwd_form{
+    height: 320px;
+    .forgotten_pwd_body{
+        .forgotten_pwd_logo{
+            img{
+                display: block;
+                margin: 30px auto;
+            }
+        }
+        .forgotten_pwd_title{
+            font-size: 18px;
+            font-weight: bold;
+            color: $primary;
+        }
+        .forgotten_pwd input{
+            display: block;
+            width: 300px;
+            height: 40px;
+        }
+        .forgotten_pwd_btn{
+            width: 300px;
+            height: 40px;
+            color: white;
+            background-color: $primary;
+            border: 0;
+        }
+    }
+}

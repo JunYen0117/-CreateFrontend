@@ -6,6 +6,7 @@ $secondary: #dcd5ca;
 $info: #903f23;
 $success: #a5b6a4;
 $light: #7b7b7b;
+$dark: rgb(15, 99, 15);
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $h1-font-size:                $font-size-base * 1.375 !default;  // 22px
@@ -22,6 +23,27 @@ $h6-font-size:                $font-size-base !default;
 * {
   box-sizing: border-box;
   list-style: none;
+
+}
+
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+figure{
+  margin: 0px;
+}
+
+ul, p {
+  padding-inline-start: 0px; 
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* =============== 文字大小 =============== */

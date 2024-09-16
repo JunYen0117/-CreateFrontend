@@ -1,0 +1,43 @@
+.pwdchanging{
+    .pwdchanging_title{
+        font-size: $h2-font-size;
+        font-weight: bold;
+    }
+    form .d-block.d-md-flex{
+        position: relative;
+        .pwdchanging_input{
+            border: 1px solid $secondary;
+            border-radius: 0;
+        }
+        label{
+            font-size: $h2-font-size;
+            font-weight: bold;
+        }
+
+        .signup_eye, .signup_eye2, .signup_eye3{
+            position: absolute;
+            top: 3px;
+            right: 10px;
+        }
+    }
+    .pwdchanging_update_btn{
+        width: 300px;
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .pwdchanging{
+        .pwdchanging_title{
+            font-size: $h4-font-size;
+            font-weight: bold;
+        }
+        label{
+            font-size: $h4-font-size;
+            font-weight: bold;
+        }
+    }
+  }

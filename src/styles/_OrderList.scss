@@ -1,0 +1,155 @@
+.border-bottom {
+  a {
+    font-size: 1.125rem;
+    color: $light;
+    text-decoration: none;
+    margin-right: 10px;
+    &:hover {
+      color: $primary;
+
+      text-decoration: none;
+      border-bottom-style: solid;
+    }
+  }
+}
+
+.img1 {
+  width: 250px;
+}
+
+.orderlist-card {
+  // position: relative;
+  // margin-bottom: 2rem;
+  font-size: $h3-font-size;
+  font-weight: bold;
+
+  .card-title {
+    background: $secondary;
+    color: #000;
+  }
+  .card-button {
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid $secondary;
+    font-weight: bold;
+  }
+}
+
+.productOrder {
+  margin-top: 40px;
+  h1 {
+    font-weight: 900;
+  }
+}
+
+.ol_table {
+  // margin-left: 10%;
+  tr {
+    font-weight: 400;
+    td {
+      padding: 0.5rem 3rem;
+    }
+  }
+}
+
+.ol_tableList {
+  margin-left: 10%;
+  tr {
+    font-weight: 400;
+    td {
+      padding: 0.5rem 3rem;
+    }
+  }
+}
+
+.ol_tabledown {
+  margin-right: 3%;
+  tr {
+    font-weight: 500;
+
+    td {
+      padding: 0.5rem 0;
+    }
+  }
+}
+
+.card-content {
+  position: relative;
+  .card-button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  p {
+    font-weight: 900;
+  }
+}
+
+.ol_p {
+  padding-left: 10%;
+}
+
+.ol_f {
+  font-weight: bold;
+}
+
+.orderlist-b1 {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  background-color: #fff;
+  border: 1px solid $secondary;
+  font-weight: bold;
+}
+
+.orderlist-b2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid $secondary;
+  font-weight: bold;
+}
+
+.orderdetail_bt {
+  h1 {
+    font-size: 20px;
+    font-weight: 300;
+    color: $primary;
+  }
+}
+
+.ant-btn-primary {
+  color: #fff;
+  border-color: $primary;
+  background: $primary;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+  &:hover {
+    background-color: #fff;
+    border-color: rgb(221, 219, 217);
+    color: #000;
+  }
+}
+
+.ant-btn-default {
+  &:hover {
+    background-color: rgb(214, 161, 96);
+    border-color: rgb(214, 161, 96);
+    color: #fff;
+  }
+}
+
+.detail_td{
+  font-weight: 400;
+}
+
+
+// .ant-collapse-header{
+//   display: flex;
+// }
+
+.ant-collapse-header-text{
+  width: 1180px;
+}

@@ -1,0 +1,301 @@
+/* ThemePlanning頁面模組化 */
+.planning_section_one a, .planning_section_two a, .planning_section_three a, .planning_section_four a, .planning_section_five a, .planning_section_six a, .planning_section_seven a, .planning_section_eight a, .planning_section_nine a{
+    display: block;
+}
+/* h3標題 */
+.planning_section_two h3, .planning_section_three h3, .planning_section_six h3,  .planning_section_nine h3{
+    color: $primary;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+    .planning_section_two h3, .planning_section_three h3, .planning_section_six h3,  .planning_section_nine h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+}
+/* p內文 */
+.planning_section_one p, .planning_section_two p, .planning_section_three p, .planning_section_four p, .planning_section_five p, .planning_section_six p, .planning_section_seven p, .planning_section_eight p, .planning_section_nine p{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2rem;
+}
+@media screen and (max-width: 900px) {
+    .planning_section_one p, .planning_section_two p, .planning_section_three p, .planning_section_four p, .planning_section_five p, .planning_section_six p, .planning_section_seven p, .planning_section_eight p, .planning_section_nine p{
+    font-size: var(--mobile_text);
+    line-height: 1.8rem;
+}
+}
+/* section加底線 */
+.planning_section_two, .planning_section_five, .planning_section_seven, .planning_section_eight{
+    border-bottom: 2px solid $secondary;
+}
+/* 按鈕 */
+.planning_section_one button, .planning_section_two button, .planning_section_three button, .planning_section_four button, .planning_section_five button, .planning_section_six button, .planning_section_seven button, .planning_section_eight button, .planning_section_nine button{
+    width: 280px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $primary;
+    border: 1px solid $primary;
+}
+/* card陰影效果 */
+.section7_card:hover, .section8_card:hover{
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ThemePlanning模組化結束 */
+
+/* planning_section_one */
+.planning_section_one{
+    figure{
+        margin: 0 0 0 0;
+    }
+    img{
+        width: 100%;
+    }
+    div{
+        background: $secondary;
+    }
+    .text{
+        color: $primary;
+    }
+    ul{
+        font-size: var(--desktop_title);
+        font-weight: bold;
+        border-bottom: 2px solid $secondary;
+        li .section1_menu_item{
+            color: black;
+            font-size: $h1-font-size;
+            text-decoration: none;
+            &:hover{
+                color: $info;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .planning_section_one ul{
+        font-size: var(--mobile_title);
+        li .section1_menu_item{
+            font-size: $h2-font-size;
+        }
+    }
+}
+
+/* planning_section_two */
+.section2_flex{
+    justify-content: center;
+    .section2_flex_item_left{
+        width: 33%;
+        margin: 0 0 0 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .section2_flex_item_right{
+        width: 33%;
+        background: $secondary;
+        p{
+            font-size: 1rem;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .section2_flex{
+        flex-direction: column;
+        .section2_flex_item_left, .section2_flex_item_right{
+            width: 100%;
+            align-items: stretch;
+            p{
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+/* planning_section_three */
+.planning_section_three figure{
+    width: 25%;
+}
+.planning_section_three img{
+    width: 100%;
+}
+@media screen and (max-width: 900px) {
+    .planning_section_three figure{
+    width: 30%;
+    }
+}
+
+/* planning_section_four */
+.planning_section_four{
+    background: $secondary;
+    h4{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    img{
+        width: 100%;
+    }
+}
+.section4_flex_item{
+    width: 20%;
+} 
+@media screen and (max-width: 900px) {
+    .section4_flex_item{
+        width: 45%;
+    }
+}
+
+/* planning_section_five */
+.planning_section_five h4{
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.planning_section_five .brand{
+    color: lightgray;
+    font-size: var(--desktop_title);
+}
+.section5_flex_item{
+    width: 15%;
+    img{
+        width: 100%;
+    } 
+}
+@media screen and (max-width: 900px) {
+    .planning_section_five h4{
+        padding-top: 1rem;
+        font-size: var(--mobile_title);
+    }
+    .planning_section_five .brand{
+        color: lightgray;
+        font-size: var(--mobile_text);
+    }
+    .section5_flex_item{
+    width: 45%;
+}
+}
+/* planning_section_six */
+.planning_section_six figure{
+    width: calc(28% + 120px);
+    img{
+        width: 100%;
+    }
+}
+
+/* .planning_section_seven */
+.planning_section_seven{
+    background: $secondary;
+    h4{
+        font-size: 22px;
+        font-weight: bold;
+    }
+}
+.section7_card{
+    width: 30%;
+    background: white;
+    .theme_planning_avatar{
+        width: 100%;
+        height: 20vw;
+        position: relative;
+        a{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .pic{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.planning_section_seven h5{
+    font-size: var(--desktop_title);
+    font-weight: bold;
+}
+.planning_section_seven .site{
+    color: $secondary;
+    border: 1px solid lightgray;
+}
+@media screen and (max-width: 900px) {
+    .planning_section_seven h5{
+        font-size: var(--mobile_title);
+        font-weight: bold;
+    }
+    .planning_section_seven .site, .planning_section_seven .price{
+        font-size: var(--mobile_text);
+    }
+}
+/* .planning_section_eight */
+.planning_section_eight h4{
+    font-size: 22px;
+    font-weight: bold;
+}
+.section8_card{
+    width: 30%;
+    background: white;
+    border: 1px solid $secondary;
+    .theme_planning_avatar{
+        width: 100%;
+        position: relative;
+        a{
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .pic{
+            width: 100%;
+        }
+    }
+}
+.planning_section_eight h5{
+    font-size: var(--desktop_title);
+    font-weight: bold;
+}
+.planning_section_eight .site{
+    color: $secondary;
+    border: 1px solid lightgray;
+}
+@media screen and (max-width: 900px) {
+    .planning_section_eight h5{
+        font-size: var(--mobile_title);
+        font-weight: bold;
+    }
+    .planning_section_eight .site, .planning_section_eight .price{
+        font-size: var(--mobile_text);
+    }
+}
+/* .planning_section_nine */
+.section9_article_card{
+    width: 40%;
+    figure{
+        height: 20vw;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.planning_section_nine .span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+    .section9_article_card{
+    width: 46%;
+    }
+    .planning_section_nine .span{
+    font-size: var(--mobile_title);
+    }
+}

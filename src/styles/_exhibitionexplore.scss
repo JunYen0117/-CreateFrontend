@@ -1,0 +1,95 @@
+.markercluster-map{
+    height: 100vh;
+}
+.ex-map-title{
+    text-decoration:none;
+    color: black !important;
+    &:hover{
+        color: $primary !important;
+    }
+}
+select {
+
+    border: 1px solid $primary;
+
+    
+}
+.card-scroll{
+    height: 90vh;
+    overflow:scroll;
+
+}
+.exhibition_card {
+    .ex_heart {
+        color: rgb(194, 68, 68);
+        font-size: 1.5rem;
+        position: absolute;
+        right:5px;
+        top:20px;
+      }
+      
+    padding: 20px;
+   position: relative;
+    width: 100%;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .img-date{
+        width: 60%;
+        .date{
+           
+            color: black;
+            font-size: 12px;
+
+        }
+    }
+    .exhibition_img {
+    width: 100%;
+    
+    
+    img {
+        max-width: 100%;
+        
+        object-fit: cover;
+    }
+   
+}
+
+}
+
+.exhibition_card:hover {
+    box-shadow: 8px 8px 10px #b996644d;
+}
+.exhibition_text {
+    position: relative;
+    margin-left: 20px !important;
+    width: 100%;
+    h2 {
+        color: black;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+    .line {
+        border-bottom: 2px solid $primary;
+        width: 100%;
+    }
+    p {
+        
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        margin: 10px 0;
+        color: black;
+        line-height: 25px;
+        
+    }
+    .city{
+        color: black;
+    }
+}
+

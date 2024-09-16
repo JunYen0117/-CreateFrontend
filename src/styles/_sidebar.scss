@@ -8,6 +8,15 @@
       a {
         color: black;
         font-weight: bold;
+        &:hover{
+          color: $primary;
+        }
+      }
+      .sidebar_active{
+        
+      }
+      .active {
+        color: #B99664;
       }
     }
   }

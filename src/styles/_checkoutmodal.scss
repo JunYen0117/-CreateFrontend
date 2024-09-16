@@ -1,0 +1,78 @@
+// 結帳按鈕
+.cart_checkout_btn{
+	font-weight: 500;
+	color: #903f23;
+	background-color: #DCD5CA;	
+	border: 0;
+  border-radius: 3px;
+}
+
+.cart_checkout_btn:hover{
+	background-color: #b99664;
+}
+
+.checkout_modal_img{
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.checkout_modal_header {
+  border: 0;
+}
+
+.checkout_modal_title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.checkout_modal_body {
+  input,
+  textarea,
+  select,
+  input:focus,
+  textarea:focus,
+	select:focus {
+    border: 1px solid #DCD5CA;
+    color: #000;
+    box-shadow: none;
+  }
+
+	input::placeholder {
+	  color: #d4ccbd;
+	  font-size: 1rem;
+	}
+
+  label {
+    color: #000;
+  }
+}
+
+.checkout_modal_btn:hover{
+	color: #903f23;
+	background-color: #b99664;
+}
+
+.checkout_list{
+  overflow: auto;
+  max-height: 260px;
+}
+
+.checkout_modal_items{
+  margin-right:10px;
+}
+
+.checkout_modal_total{
+  margin-right: 35px;
+}
+
+.checkoutmodal_color {
+  color: #903f23;
+}
